@@ -30,6 +30,9 @@ font-style: normal;
 margin-left: 20px;
 }
 
+.flaticon-hotel:before { content: "\f10a"; }   
+.flaticon-building:before { content: "\f10b"; }
+
 .flaticon-workplace:before { content: "\f100"; }
 .flaticon-pool:before { content: "\f101"; }
 .flaticon-rug:before { content: "\f102"; }
@@ -40,3 +43,5 @@ margin-left: 20px;
 .flaticon-tap:before { content: "\f107"; }
 .flaticon-vacuum-cleaner:before { content: "\f108"; }
 .flaticon-sprayer:before { content: "\f109"; }
+.flaticon-hotel:before { content: "\f10a"; }    
+.flaticon-building:before { content: "\f10b"; }

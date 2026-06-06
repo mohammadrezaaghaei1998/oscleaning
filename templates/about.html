@@ -1,96 +1,110 @@
 {% extends 'main/base.html' %}
 {% load static %}
 {% block content %}
-   <section class="hero-wrap hero-wrap-2" 
+<section class="hero-wrap hero-wrap-2" 
          style="background-image: url('{% static "images/bg_2.jpg" %}');" 
          data-stellar-background-ratio="0.5">
 
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-end">
-          <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-0 bread">About Us</h1>
-          </div>
-        </div>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-end">
+      <div class="col-md-9 ftco-animate pb-5">
+      	<p class="breadcrumbs mb-2">
+          <span class="mr-2">
+            <a href="{% url 'index' %}">Startseite <i class="fa fa-chevron-right"></i></a>
+          </span> 
+          <span>Über uns <i class="fa fa-chevron-right"></i></span>
+        </p>
+        <h1 class="mb-0 bread">Über uns</h1>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+
+   <section class="ftco-section ftco-no-pt pb-5 ">
     	<div class="container">
     		<div class="row d-flex no-gutters">
     			<div class="col-md-6 d-flex">
     				<div class="img d-flex align-items-center justify-content-center py-5 py-md-0" style="background-image: url('{% static "images/about.jpg" %}');">
-    					<div class="time-open-wrap">
-    						<div class="desc p-4">
-		    					<h2>Business Hours</h2>
-			              		<div class="opening-hours">
-			              			<h4>Opening Days:</h4>
+						<div class="time-open-wrap">
+							<div class="desc p-4">
+								<h2>Geschäftszeiten</h2>
+								<div class="opening-hours">
+									<h4>Öffnungstage:</h4>
 									<p class="pl-3">
-										<span><strong>Monday – Friday:</strong> 9am to 20 pm</span>
-										<span><strong>Saturday :</strong> 9am to 17 pm</span>
+										<span><strong>Montag – Freitag:</strong> 9:00 – 20:00 Uhr</span>
+										<span><strong>Samstag:</strong> 9:00 – 17:00 Uhr</span>
 									</p>
-			              			<h4>Vacations:</h4>
+									<h4>Geschlossen:</h4>
 									<p class="pl-3">
-										<span>All Sunday Days</span>
-										<span>All Official Holidays</span>
+										<span>Alle Sonntage</span>
+										<span>Alle gesetzlichen Feiertage</span>
 									</p>
-			              		</div>
-		    				</div>
-								<!-- <div class="desc p-4 bg-secondary">
-									<h3 class="heading">For Emergency Cases</h3>
-									<span class="phone">(+01) 123 456 7890</span>
-								</div> -->
-    					</div>
-    				</div>
+								</div>
+							</div>
+
+							<div class="desc p-4 bg-secondary">
+								<h3 class="heading">Für Notfälle</h3>
+								<span class="phone">0176 805 947 64</span>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
     			</div>
     			<div class="col-md-6 pl-md-5 pt-md-5">
     				<div class="row justify-content-start py-5">
 		          <div class="col-md-12 heading-section ftco-animate">
-		          	<span class="subheading">Welcome to Cleaning Company</span>
-		            <h2 class="mb-4">Let's make you fresher than ever</h2>
+		          	<span class="subheading">Willkommen bei osgebäudereinigung</span>
+		            <h2 class="mb-4">Wir bringen Frische in jeden Raum</h2>
 		            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 		          </div>
 		        </div>
-						<div class="row ftco-counter py-5" id="section-counter">
-		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="45">0</strong>
-		              </div>
-		              <div class="text">
-		              	<span>Years of <br>Experienced</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="2342">0</strong>
-		              </div>
-		              <div class="text">
-		              	<span>Happy <br>Customers</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="30">0</strong>
-		              </div>
-		              <div class="text">
-		              	<span>Building <br>Cleaned</span>
-		              </div>
-		            </div>
-		          </div>
-		        </div>
+				<!-- <div class="row ftco-counter py-5" id="section-counter">
+					<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="45">0</strong>
+						</div>
+						<div class="text">
+							<span>Years of <br>Experienced</span>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="2342">0</strong>
+						</div>
+						<div class="text">
+							<span>Happy <br>Customers</span>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="30">0</strong>
+						</div>
+						<div class="text">
+							<span>Building <br>Cleaned</span>
+						</div>
+						</div>
+					</div>
+				</div> -->
 	        </div>
         </div>
     	</div>
     </section>
 
    
-
+<!-- 
     <section class="ftco-section testimony-section bg-light">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
@@ -181,79 +195,100 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
-	<section>
-			<div class="container">
-		<div class="row no-gutters">
-		<div class="col-md-7">
-			<div class="contact-wrap w-100 p-md-5 p-4">
-				<h3 class="mb-4">Contact Us</h3>
-				<div id="form-message-warning" class="mb-4"></div> 
-					<div id="form-message-success" class="mb-4">
-					Your message was sent, thank you!
-					</div>
-					<form method="POST" id="contactForm" name="contactForm" class="contactForm">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label" for="name">Full Name</label>
-									<input type="text" class="form-control" name="name" id="name" placeholder="Name">
-								</div>
-							</div>
-							<div class="col-md-6"> 
-								<div class="form-group">
-									<label class="label" for="email">Email Address</label>
-									<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="label" for="subject">Subject</label>
-									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="label" for="#">Message</label>
-									<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary">
-									<div class="submitting"></div>
-								</div>
-							</div>
+<section class="pt-5">
+  	<div class="container">
+
+
+			<div class="row justify-content-center pb-5 mb-3 mt-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Wir sind für Sie da</span>
+					<h2>Kontakt aufnehmen</h2>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-7">
+					<div class="contact-wrap w-100 p-md-5 p-4">
+						<!-- <h3 class="mb-4">Kontaktieren Sie uns</h3> -->
+						<div id="form-message-warning" class="mb-4"></div> 
+						<div id="form-message-success" class="mb-4">
+							Ihre Nachricht wurde gesendet, danke!
 						</div>
-					</form>
+						<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+    								{% csrf_token %}
+									<div class="row">
+										<div class="col-md-6">
+										<div class="form-group">
+											<label class="label" for="name">Vollständiger Name</label>
+											<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+										</div>
+										</div>
+										<div class="col-md-6">
+										<div class="form-group">
+											<label class="label" for="email">E-Mail-Adresse</label>
+											<input type="email" class="form-control" name="email" id="email" placeholder="E-Mail">
+										</div>
+										</div>
+										<div class="col-md-12">
+										<div class="form-group">
+											<label class="label" for="subject">Betreff</label>
+											<input type="text" class="form-control" name="subject" id="subject" placeholder="Betreff">
+										</div>
+										</div>
+										<div class="col-md-12">
+										<div class="form-group">
+											<label class="label" for="#">Nachricht</label>
+											<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Nachricht"></textarea>
+										</div>
+										</div>
+										<div class="col-md-12">
+										<div class="form-group">
+											<input type="submit" value="Nachricht senden" class="btn btn-primary">
+											<div class="submitting"></div>
+										</div>
+										</div>
+									</div>
+								</form>
+					</div>
+				</div>
+
+			<div class="col-md-5 d-flex align-items-stretch">
+				<div class="info-wrap w-100 p-5 img" style="background-image: url('{% static "images/about.jpg" %}');">
+				</div>
 			</div>
 			</div>
+  	</div>
+</section>
 
-		<div class="col-md-5 d-flex align-items-stretch">
-			<div class="info-wrap w-100 p-5 img" style="background-image: url('{% static "images/about.jpg" %}');">
-		</div>
-		</div>
-	</div>
+<!-- <section class="ftco-section ftco-intro" style="background-image: url('{% static "images/bg_3.jpg" %}');" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Gemeinsam entdecken wir Neues</h2>
+        <a href="" class="icon-video d-flex align-items-center justify-content-center"><span class="fa fa-play"></span></a>
+      </div>
+    </div>
+  </div>
+</section> -->
 
-	</div>
-  
-	</section>
-
-
-    <section class="ftco-section ftco-intro" style="background-image: url('{% static "images/bg_3.jpg" %}');" data-stellar-background-ratio="0.5">
-    	<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row justify-content-center">
-    			<div class="col-md-8 text-center">
-    				<h2>Together we will explore new things</h2>
-    				<a href="" class="icon-video d-flex align-items-center justify-content-center"><span class="fa fa-play"></span></a>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
+<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				{% if messages %}
+				{% for message in messages %}
+					Swal.fire({
+					icon: "{% if 'error' in message.tags %}error{% elif 'success' in message.tags %}success{% else %}info{% endif %}",
+					title: "{{ message|escapejs }}",
+					timer: 3500,
+					timerProgressBar: true,
+					showConfirmButton: false,
+					});
+				{% endfor %}
+				{% endif %}
+			});
+		</script>
 
 {% endblock %}
 
